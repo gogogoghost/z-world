@@ -1,0 +1,31 @@
+plugins {
+    id 'java-library'
+    id "org.jetbrains.kotlin.jvm" version "$kotlin_version"
+    id 'com.github.johnrengelman.shadow' version "$shadow_version"
+}
+repositories {
+    mavenCentral()
+    maven{
+        url 'https://repo.papermc.io/repository/maven-public/'
+    }
+}
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
+
+    compileOnly 'io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT'
+
+    implementation project(path:':common')
+}
+
+compileKotlin {
+    sourceCompatibility = JavaVersion.VERSION_18
+    targetCompatibility = JavaVersion.VERSION_18
+
+    kotlinOptions {
+        jvmTarget = "18"
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

@@ -1,0 +1,7 @@
+name: ZonePlguin
+main: site.zbyte.m.ZonePlugin
+version: '1.0'
+api-version: '1.19'
+
+permissions:
+    

@@ -1,0 +1,25 @@
+plugins {
+    id 'java-library'
+    id "org.jetbrains.kotlin.jvm" version "$kotlin_version"
+}
+
+
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
+
+    compileOnly 'io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT'
+}
+
+compileKotlin {
+    sourceCompatibility = JavaVersion.VERSION_18
+    targetCompatibility = JavaVersion.VERSION_18
+
+    kotlinOptions {
+        jvmTarget = "18"
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

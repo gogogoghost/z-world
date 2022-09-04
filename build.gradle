@@ -1,0 +1,13 @@
+buildscript {
+    ext.kotlin_version = '1.7.10'
+    ext.shadow_version = '7.1.2'
+}
+
+allprojects{
+    repositories {
+        mavenCentral()
+        maven{
+            url 'https://repo.papermc.io/repository/maven-public/'
+        }
+    }
+}
