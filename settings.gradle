@@ -8,5 +8,7 @@
  */
 
 rootProject.name = 'ZWorld'
-include('ZonePlugin')
-include('Common')
+include 'ZonePlugin'
+include 'Common'
+include 'BusinessPlugin'
+

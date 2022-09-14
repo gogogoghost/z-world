@@ -1,0 +1,7 @@
+name: BusinessPlugin
+main: site.zbyte.m.BusinessPlugin
+version: '1.0'
+api-version: '1.19'
+
+permissions:
+    

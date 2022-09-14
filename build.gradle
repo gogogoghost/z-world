@@ -1,6 +1,20 @@
 buildscript {
-    ext.kotlin_version = '1.7.10'
-    ext.shadow_version = '7.1.2'
+    ext{
+        kotlin_version = '1.7.10'
+        shadow_version = '7.1.2'
+        paper_version = '1.19.2-R0.1-SNAPSHOT'
+        exposed_verion = '0.39.2'
+        h2_version = '2.1.214'
+    }
+}
+
+buildscript {
+    repositories{
+        mavenCentral()
+    }
+    dependencies {
+
+    }
 }
 
 allprojects{

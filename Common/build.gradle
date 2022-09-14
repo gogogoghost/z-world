@@ -8,7 +8,7 @@ plugins {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
 
-    compileOnly 'io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT'
+    compileOnly "io.papermc.paper:paper-api:$paper_version"
 }
 
 compileKotlin {

@@ -15,11 +15,6 @@ dependencies {
     compileOnly "io.papermc.paper:paper-api:$paper_version"
 
     implementation project(path:':Common')
-    // exposed
-    api "org.jetbrains.exposed:exposed-core:$exposed_verion"
-    implementation "org.jetbrains.exposed:exposed-jdbc:$exposed_verion"
-    // h2 driver
-    runtimeOnly "com.h2database:h2:$h2_version"
 }
 
 compileKotlin {
